@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "428498845483",
+    "project_id": "shatably-app-ba784",
+    "storage_bucket": "shatably-app-ba784.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:428498845483:android:de750018b5c0e378a0cf6e",
+        "android_client_info": {
+          "package_name": "com.example.shatably"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "428498845483-ab5d9n8nf45l6m725f9mp72mrf2ra4hu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shatably",
+            "certificate_hash": "201969b5490b7b0b993f248af13c14369e4bfb1c"
+          }
+        },
+        {
+          "client_id": "428498845483-9rf84ls9qb19feajla9agbofdnkie5jm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdHSMlIjD6PaUexW0UMm4bmvzWuSokHTw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "428498845483-9rf84ls9qb19feajla9agbofdnkie5jm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

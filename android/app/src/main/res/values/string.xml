@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="facebook_app_id">616329289830592</string>
+    <string name="fb_login_protocol_scheme">7254ae0495d7789665e9df895df693ad</string>
+    <string name="app_name">Shatably</string>
+
+
+</resources>
