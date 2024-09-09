@@ -29,6 +29,7 @@ class _SignInState extends State<SignIn> {
   void initState(){
     super.initState();
     user = FirebaseAuth.instance.authStateChanges().listen((user) {
+      //to make user still login.
       if(user==null){
         print("User SignOut");
       }
@@ -39,6 +40,7 @@ class _SignInState extends State<SignIn> {
 
 
   void _passShow(){
+    //option to show pass or hide.
     setState(() {
       isHidden =!isHidden;
     });
@@ -129,6 +131,7 @@ class _SignInState extends State<SignIn> {
               ),
 
               TextButton(
+                  //to reset the password if forgotten.
                   onPressed: ()async{
                     await FirebaseAuth.instance.sendPasswordResetEmail(email: email);
                     Fluttertoast.showToast(
@@ -151,6 +154,7 @@ class _SignInState extends State<SignIn> {
                       }
                     }
                     on FirebaseAuthException catch(e){
+                      //Error message to user if any mistakes founded
                       if(e.code=="user-not-found"){
                         Fluttertoast.showToast(msg: "Email is Valid");
                       }
@@ -185,6 +189,7 @@ class _SignInState extends State<SignIn> {
 
 
               FacebookBtn(
+                //fast login with facebook account.
                 color: Colors.indigo,
                 text: "Facebook",
                 onPressed: ()async{
@@ -194,6 +199,7 @@ class _SignInState extends State<SignIn> {
               ),
 
               GoogleBtn(
+                //fast login with google Account.
                   color: Colors.blue,
                   onPressed: ()async{
                     await signInWithGoogle();
