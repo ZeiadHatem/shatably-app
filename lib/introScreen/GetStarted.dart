@@ -73,6 +73,7 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
            ],
          ),
        ),
+      // it`s disgn to show  the switch between pages to users.
        floatingActionButton: Padding(
          padding: const EdgeInsets.only(left: 20, bottom: 20),
          child: Row(
@@ -85,6 +86,7 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
                ),
                
                SmoothPageIndicator(
+                
                  controller: controller
                  , count: 3,
                  effect:WormEffect(
@@ -94,6 +96,7 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
                ),
 
                FloatingActionButton(
+                //button to change the image to show more info about program.
                  backgroundColor: Colors.black87,
                    child: Icon(Icons.arrow_forward_ios_outlined),
                    onPressed: ()=>controller.nextPage(duration: Duration(seconds: 2), curve: Curves.bounceOut),
