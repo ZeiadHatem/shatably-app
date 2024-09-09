@@ -29,6 +29,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   getUser(){
+    // to get any info about user(without image) to show it in screen
 
     final User = Auth.currentUser;
     if(User != null){
@@ -101,6 +102,7 @@ class _HomePageState extends State<HomePage> {
                   ]
                 ),
                 child: ListView(
+                  //block to bannar ads.
                   scrollDirection: Axis.horizontal,
                   children: [
                     ContainerHomePage(
@@ -140,6 +142,7 @@ class _HomePageState extends State<HomePage> {
               SizedBox(height: 50,),
 
               Row(
+                //container of shortcuts buttons.
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   HomePageBtn(
@@ -169,6 +172,7 @@ class _HomePageState extends State<HomePage> {
               ),
               SizedBox(height: 20,),
               Row(
+                //List of deals of day.
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text("Deals of The Day" , style: TextStyle(
@@ -192,6 +196,7 @@ class _HomePageState extends State<HomePage> {
                         ]*/
                     ),
                     child: ListView.builder(
+                      // to show some product not all.
                         scrollDirection: Axis.horizontal,
                         itemCount: products.length-6,
                         itemBuilder: (context , index)=>ContainerProduct(
