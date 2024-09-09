@@ -30,6 +30,7 @@ class SearchPage extends StatelessWidget{
       ),
       
       body: ListView.builder(
+        //list of some suggetion product in search not all.
            itemCount: products.length-8,
           itemBuilder: (context , index)=>
               MaterialsContainer(
