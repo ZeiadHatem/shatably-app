@@ -6,7 +6,7 @@ import 'package:shatably/tools/Products.dart';
 
 import 'Chat Screen Home.dart';
 import 'SearchPage.dart';
-
+//screen to handle it all Screens and get each Screen a number.
 
 class NavigationBar1 extends StatefulWidget{
   static String screenR = "NavigationBar1";
