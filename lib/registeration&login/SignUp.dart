@@ -49,6 +49,7 @@ class _SignUpState extends State<SignUp> {
   }
 
   uploadImage()async{
+    //to upload user image and edite on it and upload it to database(firebase>Storage).
     final gallery = await imagePicker.pickImage(source: ImageSource.gallery);
     if(gallery!=null){
       croppedImage = await ImageCropper().cropImage(
@@ -240,6 +241,7 @@ class _SignUpState extends State<SignUp> {
                   onPressed: ()async{
                     FocusManager.instance.primaryFocus?.unfocus();
                     try{
+                      //method to make any image unique to 
                       var nameImage = basename(croppedImage!.path);
                       var random = Random().nextInt(1000000000);
                       nameImage = '$random%%%$nameImage';
@@ -256,6 +258,7 @@ class _SignUpState extends State<SignUp> {
                             'image': urlImage
                           }
                       );
+                      //just create user with email and password without phone number and push to sign in page to login.
                       final newUser= await _auth.createUserWithEmailAndPassword(email: email, password: password);
                       Navigator.push(context, MaterialPageRoute(builder: (context)=>SignIn()));
 
