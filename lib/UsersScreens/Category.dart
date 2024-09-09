@@ -10,6 +10,7 @@ import '../detailsScreens/BlackSmithPage.dart';
 import '../detailsScreens/ElectricityPage.dart';
 import '../detailsScreens/PlumbingPage.dart';
 
+//Screen to show the options in my program
 
 class CategoryPage extends StatelessWidget{
    //late final Function press;
