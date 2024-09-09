@@ -1,3 +1,4 @@
+
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -85,6 +86,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   Widget build(BuildContext context) {
     return AnimatedSplashScreen(
+      //just Splash Screen to intro the program.
       splash: Center(
         child: Image(
           image: AssetImage("tools/images/ImageBoarding/ShatablySplash.png"),
